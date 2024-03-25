@@ -17,4 +17,10 @@ function vowels(str) {
   return count;
 }
 
-console.log(vowels("Hello World"));
+//regex solution
+function vowelsA(str) {
+  const matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+}
+
+console.log(vowels("How are you"));
